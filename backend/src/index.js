@@ -22,7 +22,7 @@ app.use(cookieParser());   // Parses cookies for authentication
 
 // Define routes after middleware
 app.use("/api/auth", authRoutes);
-app.use("/api/message", messageRoutes);
+app.use("/api/messages", messageRoutes);
 
 app.listen(PORT, () => {
     console.log("server is running on PORT: " + PORT);
